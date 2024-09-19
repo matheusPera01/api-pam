@@ -3,7 +3,7 @@ import mysql2 from 'mysql2';
 import multer from 'multer';
 import cors from 'cors';
 const app = express();
-const port = 3360;
+const port = process.env.PORT;
 
 app.use(cors({
     origin: '*',  //declara que todas as fontes podem ser acessadas;
